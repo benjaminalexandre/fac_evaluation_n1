@@ -1,0 +1,167 @@
+@font-face {
+    font-family: Bernina;
+    src: url("font/BerninaSans-Web-CondensedBold.woff2");
+}
+
+@font-face {
+    font-family: GothamHTF;
+    src: url("font/GothamHTF-Book.woff");
+}
+
+*{
+    margin: 0;
+    font-family: Bernina;
+}
+
+button{
+    background-color: #f7ffff;
+    border: 1px #3b4443 solid;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 0 5px;
+    padding: 10px;
+    color: #044757;
+    font-family: GothamHTF;
+}
+
+button:hover{
+    background-color: #044757;
+    color: #f7ffff;
+}
+
+span{
+    font-family: GothamHTF;
+    font-size: 10px;
+}
+
+#img_background{
+    width: 100%;
+}
+
+#promo{
+    position:absolute;
+    right: 100px;
+    top: 100px;
+    transform: rotate(20deg);
+    background-color: #7f0325;
+    color: white;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    font-family: GothamHTF;
+}
+
+#content{
+    text-align: center;
+    background-color: #f7ffff;
+    color: #044757;
+}
+
+#logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#title{
+    font-size: 50px;
+    margin: 10% 0;
+}
+
+#text_content{
+    font-size: 18px;
+    margin: 10% 0;
+}
+
+#sign{
+    float: left;
+    font-family: GothamHTF;
+}
+
+#image{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    color: #044757;
+}
+
+#img1{
+    order:3;
+}
+
+#img2{
+    order: 1;
+}
+
+#img3{
+    order: 2;
+}
+
+.text_img{
+    font-family: GothamHTF;
+}
+
+.mes_images>img{
+    width: 190px;
+    margin: 20px;
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 480px) {
+    #content{
+        padding: 0 0.5%;
+    }
+
+    #image{
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    #img1{
+        order:1;
+    }
+
+    #img2{
+        order: 2;
+    }
+
+    #img3{
+        order: 3;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    button{
+        align-self: flex-start;
+    }
+
+    #content{
+        padding: 0 20%;
+    }
+
+    #sign{
+        float: right;
+    }
+
+    #image{
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    #img1{
+        order: 1;
+    }
+
+    #img2{
+        order: 2;
+    }
+
+    #img3{
+        order: 3;
+    }
+
+    .mes_images>img{
+        width: 150px;
+    }
+}
